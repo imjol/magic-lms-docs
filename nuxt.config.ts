@@ -1,4 +1,19 @@
+import tailwindcss from "@tailwindcss/vite";
+
 export default defineNuxtConfig({
+  components: true,
+  // css: ['~/assets/css/main.css'],
+  // vite: {
+  //   plugins: [
+  //     tailwindcss(),
+  //   ],
+  // },
+  content: {
+    markdown: {
+      remarkPlugins: [],
+      rehypePlugins: [],
+    },
+  },
   // https://github.com/nuxt-themes/docus
   extends: ['@nuxt-themes/docus'],
   devtools: { enabled: true },
