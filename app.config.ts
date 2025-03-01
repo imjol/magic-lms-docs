@@ -5,8 +5,8 @@ export default defineAppConfig({
     description: 'The best place to start your documentation.',
     image: 'https://user-images.githubusercontent.com/904724/185365452-87b7ca7b-6030-4813-a2db-5e65c785bf88.png',
     socials: {
-      youtube: 'imjol',
-      facebook: 'imjol',
+      youtube: '@imjolofficial?si=n6Nx0_hOYvHbh3g5',
+      facebook: 'imjolhq',
       // twitter: 'nuxt_js',
       // github: 'nuxt-themes/docus',
       // nuxt: {
