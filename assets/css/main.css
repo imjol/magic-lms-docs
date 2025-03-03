@@ -1,2 +1,22 @@
-@import "tailwindcss";
-@custom-variant dark (&:where(.dark, .dark *));
+/* @import "tailwindcss"; */
+/* @custom-variant dark (&:where(.dark, .dark *)); */
+
+.document-driven-page .page-body{
+  img, video {
+    height: auto;
+    max-width: 95%;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+
+  @media (min-width: 768px) {
+    img, video{
+      max-width: 90%;
+    }
+  }
+  @media (min-width: 1280px) {
+    img, video {
+      max-width: 85%;
+    }
+  }
+}
