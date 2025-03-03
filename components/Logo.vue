@@ -1,5 +1,6 @@
 <template>
-    <img width="auto" height="50px" class="dark:hidden inline-block" src="https://cdn.imjol.com/MagicLMS/Logo.png" />
+    <img style="height: 50px!important;width:auto;" class="dark:hidden inline-block"
+        src="https://cdn.imjol.com/MagicLMS/Logo.png" />
     <!-- <img width="120" class="dark:inline-block hidden" src="/logo-dark.png"/> -->
 </template>
 
