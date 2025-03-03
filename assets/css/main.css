@@ -2,16 +2,16 @@
 /* @custom-variant dark (&:where(.dark, .dark *)); */
 
 :root{
-  --color-primary-900: #001A1F;
-    --color-primary-800: #00232B;
-    --color-primary-700: #024757;
-    --color-primary-600: #31b978;
-    --color-primary-500: #1ab69d;
-    --color-primary-400: #55E1FF;
-    --color-primary-300: #82E3FF;
-    --color-primary-200: #C5F2FF;
-    --color-primary-100: #DCF7FF;
-    --color-primary-50: #F1FCFF;
+  --color-primary-900: #001A1F!important;
+  --color-primary-800: #00232B!important;
+  --color-primary-700: #024757!important;
+  --color-primary-600: #31b978!important;
+  --color-primary-500: #1ab69d!important;
+  --color-primary-400: #55E1FF!important;
+  --color-primary-300: #82E3FF!important;
+  --color-primary-200: #C5F2FF!important;
+  --color-primary-100: #DCF7FF!important;
+  --color-primary-50: #F1FCFF!important;
 }
 .document-driven-page .page-body{
   img, video {
