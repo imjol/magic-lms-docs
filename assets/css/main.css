@@ -1,6 +1,18 @@
 /* @import "tailwindcss"; */
 /* @custom-variant dark (&:where(.dark, .dark *)); */
 
+:root{
+  --color-primary-900: #001A1F;
+    --color-primary-800: #00232B;
+    --color-primary-700: #024757;
+    --color-primary-600: #31b978;
+    --color-primary-500: #1ab69d;
+    --color-primary-400: #55E1FF;
+    --color-primary-300: #82E3FF;
+    --color-primary-200: #C5F2FF;
+    --color-primary-100: #DCF7FF;
+    --color-primary-50: #F1FCFF;
+}
 .document-driven-page .page-body{
   img, video {
     height: auto;
