@@ -1,3 +1,22 @@
+interface ILink {
+  title?: string;
+  icon?: string;
+  to: string;
+  target?: Target;
+  showLinkIcon?: boolean; // For nav and toc link section
+}
+const socials: ILink[] = [
+  {
+    icon: 'lucide:youtube',
+    to: 'https://www.youtube.com/channel/imjol',
+    target: '_blank',
+  },
+  {
+    icon: 'lucide:facebook',
+    to: 'https://www.facebook.com/imjol',
+    target: '_blank',
+  }
+]
 export default defineAppConfig({
   shadcnDocs: {
     site: {
@@ -27,10 +46,10 @@ export default defineAppConfig({
     },
     header: {
       title: 'shadcn-docs',
-      showTitle: true,
+      showTitle: false,
       logo: {
-        light: '/logo.svg',
-        dark: '/logo-dark.svg',
+        light: 'https://cdn.imjol.com/MagicLMS/Logo.png',
+        dark: 'https://cdn.imjol.com/MagicLMS/Logo.png',
       },
       darkModeToggle: true,
       // nav: [{
@@ -81,21 +100,13 @@ export default defineAppConfig({
       //   target: '_self',
       //   showLinkIcon: true,
       // }],
-      links: [{
-        icon: 'lucide:facebook',
-        to: 'https://www.facebook.com/imjol',
-        target: '_blank',
-      }, {
-        icon: 'lucide:github',
-        to: 'https://github.com/ZTL-UwU/shadcn-docs-nuxt',
-        target: '_blank',
-      }],
+      links: socials,
     },
     aside: {
       useLevel: true,
       collapse: false,
       collapseLevel: 1,
-      folderStyle: 'default',
+      folderStyle: 'tree',
     },
     main: {
       breadCrumb: true,
@@ -103,7 +114,7 @@ export default defineAppConfig({
       codeCopyToast: true,
       codeCopyIcon: 'lucide:copy',
       editLink: {
-        enable: true,
+        enable: false,
         pattern: 'https://github.com/ZTL-UwU/shadcn-docs-nuxt/edit/main/content/:path',
         text: 'Edit this page',
         icon: 'lucide:square-pen',
@@ -156,46 +167,17 @@ export default defineAppConfig({
       },
     },
     footer: {
-      credits: 'Made with ❤️ by [**Tony Zhang**](https://github.com/ZTL-UwU/)',
-      links: [{
-        icon: 'lucide:heart',
-        title: 'Sponsor Me',
-        to: 'https://ko-fi.com/ztl_uwu',
-        target: '_blank',
-      }, {
-        icon: 'lucide:twitter',
-        to: 'https://x.com/ZTL_UwU',
-        target: '_blank',
-      }, {
-        icon: 'lucide-lab:butterfly',
-        to: 'https://bsky.app/profile/ztl-uwu.bsky.social',
-        target: '_blank',
-      }, {
-        icon: 'lucide:github',
-        to: 'https://github.com/ZTL-UwU/shadcn-docs-nuxt',
-        target: '_blank',
-      }],
+      credits: 'Made by [Imjol](https://imjol.com)',
+      links: socials,
     },
     toc: {
       enable: true,
       enableInMobile: false,
       enableInHomepage: false,
       title: 'On This Page',
-      links: [{
-        title: 'Star on GitHub',
-        icon: 'lucide:star',
-        to: 'https://github.com/ZTL-UwU/shadcn-docs-nuxt',
-        target: '_blank',
-        showLinkIcon: true,
-      }, {
-        title: 'Create Issues',
-        icon: 'lucide:circle-dot',
-        to: 'https://github.com/ZTL-UwU/shadcn-docs-nuxt/issues',
-        target: '_blank',
-        showLinkIcon: true,
-      }],
+      links: [],
       carbonAds: {
-        enable: true,
+        enable: false,
         disableInDev: true,
         disableInMobile: false,
         fallback: false,
