@@ -82,8 +82,8 @@ export default defineAppConfig({
       //   showLinkIcon: true,
       // }],
       links: [{
-        icon: 'lucide:coffee',
-        to: 'https://ko-fi.com/ztl_uwu',
+        icon: 'lucide:facebook',
+        to: 'https://www.facebook.com/imjol',
         target: '_blank',
       }, {
         icon: 'lucide:github',

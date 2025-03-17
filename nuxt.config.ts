@@ -45,6 +45,9 @@ export default defineNuxtConfig({
   },
   content: {
     documentDriven: true,
+    markdown: {
+      mdc: true
+    },
     highlight: {
       theme: {
         default: 'github-light',
