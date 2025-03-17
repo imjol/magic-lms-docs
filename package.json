@@ -70,6 +70,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.10.1",
+    "@iconify-json/lucide-lab": "^1.2.3",
     "@nuxt/devtools": "^2.3.0",
     "@nuxt/kit": "^3.16.0",
     "@vueuse/core": "^13.0.0",

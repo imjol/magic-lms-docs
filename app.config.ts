@@ -33,54 +33,54 @@ export default defineAppConfig({
         dark: '/logo-dark.svg',
       },
       darkModeToggle: true,
-      nav: [{
-        title: 'Docs',
-        links: [{
-          title: 'Getting Started',
-          to: '/getting-started',
-          description: 'Start building your document with shadcn-docs-nuxt',
-          icon: 'lucide:rocket',
-        }, {
-          title: 'Components',
-          to: '/components/prose',
-          description: 'Explore available UI components and usage examples.',
-          icon: 'lucide:box',
-        }, {
-          title: 'API',
-          to: '/api/configuration/shadcn-docs',
-          description: 'Discover the configurations and exposed APIs.',
-          target: '_self',
-          icon: 'lucide:code',
-        }],
-      }, {
-        title: 'Credits',
-        links: [{
-          title: 'shadcn-ui',
-          to: 'https://ui.shadcn.com/',
-          description: 'For the beautiful component design & docs design',
-          target: '_blank',
-        }, {
-          title: 'shadcn-vue',
-          to: 'https://www.shadcn-vue.com/',
-          description: 'For the vue port of shadcn-ui & some docs component source',
-          target: '_blank',
-        }, {
-          title: 'Docus',
-          to: 'https://docus.dev/',
-          description: 'For inspiration & some docs component source',
-          target: '_blank',
-        }, {
-          title: 'Nuxt Content',
-          to: 'https://content.nuxt.com/',
-          description: 'Content made easy for Vue Developers',
-          target: '_blank',
-        }],
-      }, {
-        title: 'Use This Template',
-        to: '/getting-started/installation',
-        target: '_self',
-        showLinkIcon: true,
-      }],
+      // nav: [{
+      //   title: 'Docs',
+      //   links: [{
+      //     title: 'Getting Started',
+      //     to: '/getting-started',
+      //     description: 'Start building your document with shadcn-docs-nuxt',
+      //     icon: 'lucide:rocket',
+      //   }, {
+      //     title: 'Components',
+      //     to: '/components/prose',
+      //     description: 'Explore available UI components and usage examples.',
+      //     icon: 'lucide:box',
+      //   }, {
+      //     title: 'API',
+      //     to: '/api/configuration/shadcn-docs',
+      //     description: 'Discover the configurations and exposed APIs.',
+      //     target: '_self',
+      //     icon: 'lucide:code',
+      //   }],
+      // }, {
+      //   title: 'Credits',
+      //   links: [{
+      //     title: 'shadcn-ui',
+      //     to: 'https://ui.shadcn.com/',
+      //     description: 'For the beautiful component design & docs design',
+      //     target: '_blank',
+      //   }, {
+      //     title: 'shadcn-vue',
+      //     to: 'https://www.shadcn-vue.com/',
+      //     description: 'For the vue port of shadcn-ui & some docs component source',
+      //     target: '_blank',
+      //   }, {
+      //     title: 'Docus',
+      //     to: 'https://docus.dev/',
+      //     description: 'For inspiration & some docs component source',
+      //     target: '_blank',
+      //   }, {
+      //     title: 'Nuxt Content',
+      //     to: 'https://content.nuxt.com/',
+      //     description: 'Content made easy for Vue Developers',
+      //     target: '_blank',
+      //   }],
+      // }, {
+      //   title: 'Use This Template',
+      //   to: '/getting-started/installation',
+      //   target: '_self',
+      //   showLinkIcon: true,
+      // }],
       links: [{
         icon: 'lucide:coffee',
         to: 'https://ko-fi.com/ztl_uwu',
