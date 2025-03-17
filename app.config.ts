@@ -33,7 +33,7 @@ export default defineAppConfig({
     },
     theme: {
       customizable: true,
-      color: 'zinc',
+      color: 'neutral',
       radius: 0.5,
     },
     banner: {

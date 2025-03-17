@@ -12,13 +12,10 @@
       <UiLabel>Color</UiLabel>
       <div class="grid grid-cols-3 gap-2">
         <template v-for="color in allColors" :key="color">
-          <UiButton
-            class="justify-start gap-2"
-            variant="outline"
-            :class="{ 'border-2 border-primary': theme === color }"
-            @click="setTheme(color)"
-          >
-            <span class="flex size-5 items-center justify-center rounded-full" :style="{ backgroundColor: backgroundColor(color) }">
+          <UiButton class="justify-start gap-2" variant="outline"
+            :class="{ 'border-2 border-primary': theme === color }" @click="setTheme(color)">
+            <span class="flex size-5 items-center justify-center rounded-full"
+              :style="{ backgroundColor: backgroundColor(color) }">
               <Icon v-if="theme === color" name="lucide:check" size="16" class="text-white" />
             </span>
             <span class="text-xs capitalize">{{ color }}</span>
@@ -30,12 +27,8 @@
       <UiLabel>Radius</UiLabel>
       <div class="grid grid-cols-5 gap-2">
         <template v-for="r in RADII" :key="r">
-          <UiButton
-            class="justify-center gap-2"
-            variant="outline"
-            :class="{ 'border-2 border-primary': radius === r }"
-            @click="setRadius(r)"
-          >
+          <UiButton class="justify-center gap-2" variant="outline" :class="{ 'border-2 border-primary': radius === r }"
+            @click="setRadius(r)">
             <span class="text-xs capitalize">{{ r }}</span>
           </UiButton>
         </template>
@@ -44,30 +37,21 @@
     <div v-if="darkModeToggle" class="space-y-1.5">
       <UiLabel>Theme</UiLabel>
       <div class="grid grid-cols-3 gap-2">
-        <UiButton
-          class="justify-center gap-2"
-          variant="outline"
+        <UiButton class="justify-center gap-2" variant="outline"
           :class="{ 'border-2 border-primary': colorMode.preference === 'light' }"
-          @click="colorMode.preference = 'light'"
-        >
+          @click="colorMode.preference = 'light'">
           <Icon name="lucide:sun" size="16" />
           <span class="text-xs capitalize">Light</span>
         </UiButton>
-        <UiButton
-          class="justify-center gap-2"
-          variant="outline"
+        <UiButton class="justify-center gap-2" variant="outline"
           :class="{ 'border-2 border-primary': colorMode.preference === 'dark' }"
-          @click="colorMode.preference = 'dark'"
-        >
+          @click="colorMode.preference = 'dark'">
           <Icon name="lucide:moon" size="16" />
           <span class="text-xs capitalize">Dark</span>
         </UiButton>
-        <UiButton
-          class="justify-center gap-2"
-          variant="outline"
+        <UiButton class="justify-center gap-2" variant="outline"
           :class="{ 'border-2 border-primary': colorMode.preference === 'system' }"
-          @click="colorMode.preference = 'system'"
-        >
+          @click="colorMode.preference = 'system'">
           <Icon name="lucide:monitor" size="16" />
           <span class="text-xs capitalize">System</span>
         </UiButton>
@@ -84,6 +68,7 @@ const { darkModeToggle } = useConfig().value.header;
 
 // Create an array of color values
 const allColors: Color[] = [
+  'neutral',
   'zinc',
   'rose',
   'blue',
@@ -93,7 +78,6 @@ const allColors: Color[] = [
   'slate',
   'stone',
   'gray',
-  'neutral',
   'yellow',
   'violet',
 ];

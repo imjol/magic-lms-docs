@@ -3,9 +3,9 @@
     <ProseH1>
       {{ title }}
     </ProseH1>
-    <p class="pt-1 text-lg text-muted-foreground">
-      {{ description }}
-    </p>
+    <!-- <p class="pt-1 text-lg text-muted-foreground"> -->
+    <!--   {{ description }} -->
+    <!-- </p> -->
 
     <div v-if="badges" class="flex gap-2 pt-4">
       <NuxtLink v-for="(badge, i) in badges" :key="i" :to="badge.to" :target="badge.target">
